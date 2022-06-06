@@ -1,5 +1,7 @@
-use core2::error::Error;
+use core::marker::Send;
+use core::marker::Sync;
 use core::panic::UnwindSafe;
+use core2::error::Error;
 
 pub trait AsDynError<'a> {
     fn as_dyn_error(&self) -> &(dyn Error + 'a);

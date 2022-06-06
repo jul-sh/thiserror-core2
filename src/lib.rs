@@ -198,6 +198,7 @@
 //!   }
 //!   ```
 
+#![no_std]
 #![allow(
     // Clippy bug: https://github.com/rust-lang/rust-clippy/issues/7421
     clippy::doc_markdown,
